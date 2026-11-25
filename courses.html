@@ -111,101 +111,146 @@
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses section">
+  <!-- Main section wrapper for the Courses area -->
+<section id="courses" class="courses section">
 
-      <div class="container">
+  <!-- Bootstrap container to center content and add horizontal padding -->
+  <div class="container">
 
-        <div class="row">
+    <!-- Bootstrap row to hold the grid columns horizontally -->
+    <div class="row">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="course-item">
-              <img src="assets/img/course/course-1.webp" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Web Development</p>
-                  <p class="price">$169</p>
-                </div>
+      <!-- ================= COURSE CARD 1 ================= -->
+      <!-- Responsive column: 4/12 width on large screens (3 per row), 6/12 on medium screens (2 per row) -->
+      <!-- data-aos attributes add a zoom-in scroll animation with a 100ms delay -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        
+        <!-- Card container for the individual course -->
+        <div class="course-item">
+          
+          <!-- Course thumbnail image (img-fluid makes it scale responsively) -->
+          <img src="assets/img/course/course-1.webp" class="img-fluid" alt="BS Information Technology Thumbnail">
+          
+          <!-- Padding and text wrapper for card details -->
+          <div class="course-content">
+            
+            <!-- Top header row inside card: pushes category to the left and price to the right -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <p class="category">CMAT</p>
+              <p class="price">21000</p>
+            </div>
 
-                <h3><a href="course-details.html">Website Design</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae
-                  dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="">
-                    <a href="" class="trainer-link">Antonio</a>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;50
-                    &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;65
-                  </div>
-                </div>
+            <!-- Clickable course title linking to the details page -->
+            <h3><a href="course-details.html">BS Information Technology</a></h3>
+            
+            <!-- Short summary/description of the course -->
+            <p class="description">Learn software development, networking, database management, and modern IT systems to solve real-world business and technology challenges.</p>
+            
+            <!-- Card footer: separates instructor info (left) from stats (right) -->
+            <div class="trainer d-flex justify-content-between align-items-center">
+              
+              <!-- Instructor avatar and name -->
+              <div class="trainer-profile d-flex align-items-center">
+                <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="Instructor Antonio">
+                <a href="" class="trainer-link">Mr.Olasa</a>
+              </div>
+              
+              <!-- Course engagement metrics using Bootstrap Icons (bi) -->
+              <div class="trainer-rank d-flex align-items-center">
+                <i class="bi bi-person user-icon"></i>&nbsp;50 <!-- Enrolled students count -->
+                &nbsp;&nbsp;
+                <i class="bi bi-heart heart-icon"></i>&nbsp;65 <!-- Likes/favorites count -->
               </div>
             </div>
-          </div> <!-- End Course Item-->
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="course-item">
-              <img src="assets/img/course/course-2.webp" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Marketing</p>
-                  <p class="price">$250</p>
-                </div>
+          </div> <!-- End .course-content -->
+        </div> <!-- End .course-item -->
+      </div> <!-- End Course Item 1 -->
 
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae
-                  dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/person/person-f-14.webp" class="img-fluid" alt="">
-                    <a href="" class="trainer-link">Lana</a>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;42
-                  </div>
-                </div>
+
+      <!-- ================= COURSE CARD 2 ================= -->
+      <!-- mt-4 mt-md-0 adds top spacing on mobile screens when stacked, removing it on medium+ screens -->
+      <!-- Animation delay increased to 200ms for a staggered entrance effect -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="course-item">
+          
+          <!-- Course thumbnail image -->
+          <img src="assets/img/course/course-2.webp" class="img-fluid" alt="BS in Administration Thumbnail">
+          
+          <div class="course-content">
+            <!-- Category badge and course price -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <p class="category">CMAT</p>
+              <p class="price">19000</p>
+            </div>
+
+            <!-- Course title -->
+            <h3><a href="course-details.html">BS in Administration</a></h3>
+            
+            <!-- Course summary -->
+            <p class="description">Develop strong leadership, organizational management, and strategic planning skills to effectively run operations across diverse industries.</p>
+            
+            <!-- Footer: Instructor profile & course stats -->
+            <div class="trainer d-flex justify-content-between align-items-center">
+              <div class="trainer-profile d-flex align-items-center">
+                <img src="assets/img/person/person-f-14.webp" class="img-fluid" alt="Instructor Lana">
+                <a href="" class="trainer-link">Mrs. Sandig</a>
+              </div>
+              <div class="trainer-rank d-flex align-items-center">
+                <i class="bi bi-person user-icon"></i>&nbsp;35
+                &nbsp;&nbsp;
+                <i class="bi bi-heart heart-icon"></i>&nbsp;42
               </div>
             </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="course-item">
-              <img src="assets/img/course/course-3.webp" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Content</p>
-                  <p class="price">$180</p>
-                </div>
-
-                <h3><a href="course-details.html">Copywriting</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae
-                  dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="">
-                    <a href="" class="trainer-link">Brandon</a>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;20
-                    &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;85
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
+          </div>
         </div>
+      </div> <!-- End Course Item 2 -->
 
-      </div>
 
-    </section><!-- /Courses Section -->
+      <!-- ================= COURSE CARD 3 ================= -->
+      <!-- mt-4 mt-lg-0 keeps top margin on mobile & tablet (where it wraps to a 2nd row), removing it on large screens -->
+      <!-- Animation delay increased to 300ms -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="course-item">
+          
+          <!-- Course thumbnail image -->
+          <img src="assets/img/course/course-3.webp" class="img-fluid" alt="BS in Business and Accountancy Thumbnail">
+          
+          <div class="course-content">
+            <!-- Category badge and course price -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <p class="category">CMAT</p>
+              <p class="price">19000</p>
+            </div>
+
+            <!-- Course title -->
+            <h3><a href="course-details.html">BS in Business and Accountancy</a></h3>
+            
+            <!-- Course summary -->
+            <p class="description">Master financial accounting, auditing, taxation, and business analytics to build a solid career in corporate finance and public practice.</p>
+            
+            <!-- Footer: Instructor profile & course stats -->
+            <div class="trainer d-flex justify-content-between align-items-center">
+              <div class="trainer-profile d-flex align-items-center">
+                <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="Instructor Brandon">
+                <a href="" class="trainer-link">Mr. Tantiado</a>
+              </div>
+              <div class="trainer-rank d-flex align-items-center">
+                <i class="bi bi-person user-icon"></i>&nbsp;20
+                &nbsp;&nbsp;
+                <i class="bi bi-heart heart-icon"></i>&nbsp;85
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End Course Item 3 -->
+
+    </div> <!-- End .row -->
+
+  </div> <!-- End .container -->
+
+</section><!-- /Courses Section -->
+
 
   </main>
 
